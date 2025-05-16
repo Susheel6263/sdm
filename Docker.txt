@@ -1,0 +1,107 @@
+Docker commands on cmd 
+
+we installed 2 images redis and ubantu(any of ubantu) 
+
+to login into docker
+docker login
+
+Docker version
+docker info 
+docker images
+docker images -a
+
+After that go to docker hub and search for ubantu
+click on any docker and then take docker pull ubantu copy it and run it on cmd
+
+docker pull image name when we place it will ubantu image into system
+wait for processing
+
+docker pull image name
+docker ps
+docker ps -a
+docker run image id
+docker stop image id (to stop image)
+
+docker system
+docker system -a
+
+docker create image id  (to create container)
+
+docker start container id ( for container)
+docker stop container id
+
+to remove container(rm) and image(rmi)
+docker rmi -f image id
+docker rm -f container id
+
+docker ps -a show the container created and deleted 
+docker ps  show the container running only
+
+docker inspect container id (to check whether the container is delete or not)
+
+and this with same all with mysql
+
+create a image
+
+build command is used and it can be done using notepad and then for linux command
+
+
+To logout out docker
+docker logout
+
+
+creating a image 
+
+'wsl.exe -d Ubuntu' to launch ubantu terminal
+
+open power shell 
+
+ls 
+
+create a folder 
+mkdir docker
+
+cd docker (directory change)
+ls
+
+wsl (to connect it to ubuntu)
+touch Dockerfile
+
+wsl -l -v
+to check ubuntu is start or stop
+
+wsl -d Ubuntu  (got to docker and write this command to connect this to ubuntu)
+
+sudo apt update
+sudo apt install nano
+
+wsl --setdefault Ubuntu
+
+wsl-nano Dockerfile
+nano Dockerfile
+
+i have done this in linux 
+
+sudo nano Dockerfile
+
+# using base image
+FROM ubuntu
+MAINTAINER krishna
+RUN apt-get update
+CMD ["echo","Hello From me"]
+
+cat dockerfile
+
+sudo apt install docker.io (to install docker in ubuntu)
+
+sudo usermod -aG docker $USER
+newgrp docker
+(this to command will connect to docker)
+
+docker run hello-world for verification
+
+docker build -t
+
+create image of our java project application using build
+
+create a aws ec2 instances account
